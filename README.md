@@ -4,8 +4,11 @@ Un script Python para demostrar el uso de la Scanner API de Power BI
 https://powerbi.microsoft.com/es-es/blog/scanner-api-is-now-in-ga/
 
 
+Puede encontrar más información sobre este script en esta entrada de blog: https://www.dataxbi.com/blog/2021/08/23/probando-scanner-api-power-bi/
+
+
 Requerimientos:
-- Habilitar la autenticácion por entidad de servicio 
+- Habilitar la autenticación por entidad de servicio 
   https://docs.microsoft.com/es-es/power-bi/admin/read-only-apis-service-principal-authentication
 - Configurar el inquilino de Power BI para la exploración de metadata
   https://docs.microsoft.com/es-es/power-bi/admin/service-admin-metadata-scanning-setup#enable-tenant-settings-for-metadata-scanning
@@ -14,7 +17,7 @@ Requerimientos:
 Utiliza las siguientes variables del entorno:
 - PBI_TENANT_NAME: Nombre del inquilino de Power BI
 - PBI_ADMIN_API_CLIENT_ID : ID de la aplicación registrada en Azure AD al configurar la autenticación por entidad de servicio
-- PBI_ADMIN_API_SECRET: Secreto (o contraseña) de la aplicación registrada en Azure AD 
+- PBI_ADMIN_API_SECRET: Secreto de cliente (o contraseña) de la aplicación registrada en Azure AD 
 
 Al ejecutar el script, se creará una carpeta con el nombre del inquilino de Power BI, y dentro de ella se crearán varios ficheros:
 - <nombre_inquilino>.json: Un solo fichero con toda la información devuelta por la Scanner API
